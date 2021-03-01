@@ -9,4 +9,5 @@ If you open something like Notepad while having D-GAS running it will switch the
 ![](https://github.com/flarfmatter/dgas/blob/main/example.png)
 
 D-GAS can currently show presences when the appropriate program is open and can stop the presence when the program is closed. It can also recognize what project/file is open in the program by grabbing the process' title.
+
 It **cannot** switch presences automatically for now however because of a bug i'm trying to solve. (it should be able to soon enough)
