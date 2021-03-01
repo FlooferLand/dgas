@@ -21,7 +21,6 @@ def program():
     process = tools.GetProcessIfExists(config.process_name) if config is not None else None
     title = tools.GetWindowTitleIfExists(config)
 
-    client = None
     if process is not None:
         client = pypresence.Presence(client_id=config.client_id)
         print("Connecting to Discord..")
@@ -75,7 +74,7 @@ def program():
                 instance = False
             )
         else:
-            print(f'Process "{process.name()}" committed aliven\'t!')
+            print(f"Process \"{process.name()}\" closed!")
             client.close()
             return 0
         sleep(config.sleep)
