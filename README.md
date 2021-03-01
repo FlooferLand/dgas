@@ -5,6 +5,7 @@
 
 D-GAS' main purpose is to fix Discord's bad game activity using the Rich Presence API.
 If you open something like Notepad while having D-GAS running it will switch the rich presence on your profile to Notepad, listing the file you have open (and if you open another program D-GAS will search trough existing presences to use the presence for the program).
+
 ![](https://github.com/flarfmatter/dgas/blob/main/example.png)
 
 D-GAS can currently show presences when the appropriate program is open and can stop the presence when the program is closed. It can also recognize what project/file is open in the program by grabbing the process' title.
