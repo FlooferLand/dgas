@@ -1,9 +1,9 @@
 #from presences.presences import Predefined
 
 class Predefined:
-    UnrealEngine = 0
-    taskmgr = 1
-    Notepad = 2
+    UnrealEngine = "ue4editor"
+    taskmgr = "taskmgr"
+    Notepad = "notepad"
 
 
 class Image:

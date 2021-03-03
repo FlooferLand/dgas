@@ -1,10 +1,9 @@
-import pypresence
-from time import sleep
-from time import time as getTimeNow
-import time
-import tools
-
 def program():
+    import pypresence
+    from time import sleep
+    from time import time as getTimeNow
+    import time
+    import tools
     #from presences.presences import config
     from presences.presences import program as presencesProgram
     config = presencesProgram()
@@ -78,7 +77,3 @@ def program():
             client.close()
             return 0
         sleep(config.sleep)
-while True:
-    if program() == 0:
-        print("Waiting for a known program to be launched..")
-        sleep(5)

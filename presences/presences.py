@@ -1,8 +1,7 @@
-import sys
-import presences
-
-from presencesTools import *
 from configtypes import Predefined
+from tools import ProcessExists
+from tools import GetProcessIfExists
+from importlib import import_module
 
 config = import_module("config")
 
@@ -16,17 +15,17 @@ def Use(name):
     config = import_module("presences." + name)
     return config
 
-def Define(array):
+def Define(python_files):
     if hasattr(config, "presences"):
         for presence in config.presences:
-            for predef in array:
-                if predef[0] == presence and ProcessOfPresenceExists(predef[1]):
-                    if Use(predef[1]) is not None:
-                        return Use(predef[1])
+            for file in python_files:
+                if file == presence and ProcessOfPresenceExists(file):
+                    if Use(file) is not None:
+                        return Use(file)
 
 def program():
     return Define([
-        [Predefined.UnrealEngine, "ue4editor"],
-        [Predefined.taskmgr, "taskmgr"],
-        [Predefined.Notepad, "notepad"]
+        Predefined.UnrealEngine,
+        Predefined.taskmgr,
+        Predefined.Notepad
     ])
