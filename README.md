@@ -1,5 +1,6 @@
 # Discord's Game Activity Sucks (D-GAS)
 *The software is still a work in progress and isn't completed yet*
+
 Presences work as intended *however* switching between presences doesn't work yet.
 
 - My vision for the final version is that users will be able to make and share their own presence files defining when and how DGAS should show a program on the user's profile and that DGAS will be automatically switching presences every time the user switches programs. For exam
