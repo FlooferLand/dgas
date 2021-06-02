@@ -1,5 +1,5 @@
 # Discord's Game Activity Sucks (D-GAS)
-*The software is still a work in progress and isn't completed yet*
+*The software is still a work in progress and isn't completed yet (Might be canceled or remade in the future)*
 
 Presences work as intended *however* switching between presences doesn't work yet.
 
